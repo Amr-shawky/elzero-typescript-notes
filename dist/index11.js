@@ -1,12 +1,8 @@
 "use strict";
-let zName = "Osama";
-let all9 = 10;
-all9 = "Hello";
-let status1 = "active";
-let causes1 = 1;
-function compare(a, b) {
-    if (a === b)
-        return 0;
-    return a > b ? 1 : -1;
-}
+const add = function (num1, num2) {
+    return num1 + num2;
+};
+console.log(add(10, 20));
+const addWithArrow = (num1, num2) => num1 + num2;
+console.log(addWithArrow(10, 20));
 //# sourceMappingURL=index11.js.map

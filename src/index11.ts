@@ -1,36 +1,25 @@
 /**
- * Type Alias lets you define a custom name for a type or a combination of types.
- * - Syntax: `type AliasName = type;`
- * - Useful for reusability and code clarity
+ * Type Annotations can be used with both anonymous and arrow functions.
  * 
- * Example:
- * type ST = string;
- * let name: ST = "Osama"; // Equivalent to string
+ * Anonymous Function:
+ * const add = function(num1: number, num2: number): number {
+ *   return num1 + num2;
+ * };
  * 
- * You can also combine types:
- * type STAndNum = string | number;
- * let value: STAndNum = 100 or "Hello"; // Not boolean
+ * Arrow Function:
+ * const addWithArrow = (num1: number, num2: number): number => num1 + num2;
+ * 
+ * - Each parameter is annotated with a type.
+ * - The return type is also explicitly defined.
  */
-type ST = string;
-let zName: ST = "Osama";
 
-type STAndNum = string | number;
-let all9: STAndNum = 10;
-all9 = "Hello";
-// all9 = true; // ❌ Error
 
-type STAndNum2 = string & number; // ❌ Error, cannot combine string and number with '&'
-type STAndNum3 = string | number | boolean; // Valid, can include boolean
+// Anonymous Function
+const add = function(num1: number, num2: number): number {
+  return num1 + num2;
+};
+console.log(add(10, 20)); // 30
 
-type flags = "active" | "inactive" | "pending"; // String literal type
-let status1: flags = "active"; // Valid
-// status1 = "completed"; // ❌ Error, not part of the defined flags
-
-type causes = 1 | 0 | -1; // Numeric literal type
-let causes1: causes = 1; // Valid
-
-function compare(a: number, b: number): causes {
-  if (a === b) return 0;
-  return a > b ? 1 : -1;
-}
-// this function returns 1, 0, or -1 based on comparison
+// Arrow Function
+const addWithArrow = (num1: number, num2: number): number => num1 + num2;
+console.log(addWithArrow(10, 20)); // 30
