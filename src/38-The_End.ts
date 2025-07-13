@@ -40,3 +40,6 @@
 
 // Final practical tips
 
+
+console.log("TypeScript course completed!");
+
