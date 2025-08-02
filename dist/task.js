@@ -1,7 +1,7 @@
 "use strict";
 let userId;
 let isLoggedIn;
-function printId(id) {
+function printId4(id) {
     if (typeof id === "number") {
         console.log(`ID is number: ${id}`);
     }
@@ -9,6 +9,6 @@ function printId(id) {
         console.log(`ID is string: ${id}`);
     }
 }
-printId(123);
-printId("abc123");
+printId4(123);
+printId4("abc123");
 //# sourceMappingURL=task.js.map

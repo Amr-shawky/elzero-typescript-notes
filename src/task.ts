@@ -10,7 +10,7 @@
 let userId: number | string;
 let isLoggedIn: boolean;
 
-function printId(id: number | string) {
+function printId4(id: number | string) {
     if (typeof id === "number") {
         console.log(`ID is number: ${id}`);
     } else {
@@ -18,7 +18,7 @@ function printId(id: number | string) {
     }
 }
 // Example usage
-printId(123); // Output: ID is number: 123
+printId4(123); // Output: ID is number: 123
 // Example usage
-printId("abc123"); // Output: ID is string: abc123
+printId4("abc123"); // Output: ID is string: abc123
 

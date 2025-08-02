@@ -53,13 +53,7 @@ Create a `Truck` instance and call `drive()`.
 // Task 3
 console.log("Task 3: Classes & Classes with Interfaces");
 class Car {
-    brand: string;
-    year: number;
-
-    constructor(brand: string, year: number) {
-        this.brand = brand;
-        this.year = year;
-    }
+    constructor(public brand: string, public year: number) {}
 
     printInfo() {
         console.log(`${this.brand} - ${this.year}`);
@@ -79,10 +73,7 @@ interface Drivable {
 }
 
 class Truck implements Drivable {
-    model: string;
-
-    constructor(model: string) {
-        this.model = model;
+    constructor(public model: string) {
     }
     printModel() {
         console.log(`Model: ${this.model}`);
